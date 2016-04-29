@@ -1,0 +1,362 @@
+body{min-width: 1040px;}
+div.banner{
+	background:url(../img/club/business-banner.jpg) no-repeat center;
+	width:100%;
+	height:500px;
+	position:relative;
+}
+/*.tutorial-schedule{
+	width:70%;
+	text-align:center;
+	margin:auto;
+}
+.tutorial-schedule-title{
+	font-size:48px;
+	padding-top:86px;
+}
+.tutorial-schedule-line{
+	position:relative;
+	margin-top:10px;
+}
+.tutorial-schedule .general-title{
+	margin-top:10px;
+	width:100%;
+}*/
+.gallery-section,
+.business-intro-section,
+.event{
+	width:70%;
+	margin:auto;
+	padding-bottom:40px;
+}
+@media screen and (max-width:1024px){
+	.gallery-section,
+	.business-intro-section,
+	.event{
+	width:90%;
+	}
+}
+
+
+.event-title{
+	font-size:36px;
+	text-align:center;
+	margin:34px 0 14px;
+}
+.event-date,
+.event-place{
+	display:inline-block;
+	width:45%;
+}
+.event-date{
+	text-align:right;
+}
+.event-place{
+	margin-left:20px;
+}
+.text-block{
+	width:70%;
+	min-width:1150px;
+	margin:auto;
+	padding-top:66px;
+	color:#000;
+}
+@media screen and (max-width:1024px){
+	.text-block{
+		width:90%;
+		min-width:initial;
+	}
+}
+.text-block h3{
+	font-size:30px;
+	margin:10px 0;
+}
+.text-block .text-block-2 >img{
+	width:100%;
+}
+.text-block-2{
+	display:inline-block;
+	width:45%;
+	vertical-align:top;
+}
+.text-block-2 .sub-title{
+	font-size:24px;
+}
+.text-block-2:not(:nth-of-type(1)){
+	margin-left:3%;
+}
+.general-title {
+    width: 660px;
+}
+.gallery .general-title,
+.partners .general-title{
+	margin: auto;
+}
+.general-title span{
+	font-size:18px;
+	padding:0 10px;
+	background:#fff;
+}
+.general-title hr{
+	margin-top:-9px;
+}
+.toturial-schedule-details img {
+    
+    margin:26px -234px 60px 0;
+}
+.tutor-section{
+	width:100%;
+	height:300px;
+	background:#005686;
+	color:#fff;
+}
+.tutor-div {
+    width: 70%;
+    margin: auto;
+    height: 300px;
+    padding-top: 65px;
+}
+.tutor-img {
+    float: left;
+    width: 135px;
+    padding: 0px 45px;
+}
+@media screen and (min-device-width:320px) and (max-device-width:1024px){
+	.tutor-img {
+    float: left;
+    width: 15%;
+    padding: 0px 45px;
+}
+}
+.tutor-des {
+    float: left;
+    text-align: left;
+    width: 70%;
+    padding-top: 10px;
+}
+.tutor-des .tutor-title{
+	font-size:18px;
+}
+.tutor-des .tutor-title b{
+	font-size:30px;
+}
+.tutor-des .tutor-text {
+    font-size: 14px;
+    margin-top: 15px;
+}
+.business-intro-div{
+	width:660px;
+	text-align:center;
+	margin:auto;
+}
+.business-intro-title{
+	padding-top:90px;
+}
+.business-intro-text img {
+	margin:30px 0 10px;
+}
+.business-intro-text p {
+    text-indent: 32px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.business-intro-text p:nth-last-of-type(1) {
+    margin-bottom: 60px;
+}
+.gallery{
+	background:#fafafa;
+	width:100%;
+	height:420px;
+}
+.gallery-div .general-title span{
+	background:#fafafa;
+}
+.gallery-div{
+	text-align:center;
+	padding-top:70px;
+}
+.gallery-pics{
+	margin-top:46px;
+	display:flex;
+	display:-webkit-flex;
+	display:-moz-flex;
+	justify-content:center;
+	-webkit-justify-content:center;
+	-moz-justify-content:center;
+	flex-wrap:wrap;
+}
+.gallery-pics img{
+	width:100%;
+}
+ul.gallery-pics li {
+    width: 24%;
+    margin: 0 1% 1% 0;
+}
+
+.gallery-pics img{
+	margin:0 5px;
+}
+.partner-div {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top:90px;
+}
+ul.partners-logo {
+    display: -webkit-flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    flex-wrap: wrap;
+    -webki-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    margin:22px 0;
+}
+ul.partners-logo:nth-of-type(1){
+	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+	-moz-justify-content: flex-start;
+	text-align: center;
+}
+ul.partners-logo li {
+    width: 186px;
+    margin: 10px 0px;
+}
+.partners-text{
+	text-align:left;
+	width:660px;
+	margin:auto;
+}
+.partners-img{
+	margin-top: 28px;
+}
+.partners-text >p{
+	margin-top:20px;
+}
+.partners-text table tr td{
+	width:50%;
+}
+.join-btn {
+    display: block;
+    width: 208px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+   	margin-top:27px;
+    background: #2bb0e9;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    /* position: absolute; */
+    /* bottom: 104px; */
+    /* left: 50%; */
+    /* margin-left: -110px; */
+}
+.join-btn:hover{
+	background: #59cafa;
+    border-radius: 4px;
+}
+.event table{
+	border-collapse:collapse;
+	margin:52px 0;
+	width:100%;
+}
+
+.event table tr th,
+.event table tr td{
+	border-top:1px solid #000;
+	border-right:1px solid #000;
+	padding:15px 0 15px 15px;
+}
+.event table tr td:nth-of-type(3),
+.event table tr th:nth-of-type(3){
+	border-right:none;
+}
+.event table tr:nth-last-of-type(1) td{
+	border-bottom:1px solid #000;
+}
+.img-head{
+	float:left;
+	margin-right:10px;
+}
+.v-l-black{
+	height:78px;
+	border-right:1px solid #000;
+	margin:0 20px;
+	border-top:none;
+	border-left:none;
+	border-bottom:none;
+	display:inline-block;
+	vertical-align:bottom;
+	margin-bottom:37px;
+}
+.m-t40{
+	margin-top:40px;
+}
+.btn2{
+	width:360px;
+	height:70px;
+	line-height:70px;
+	margin:40px auto 0;
+}
+.text-block-inline{
+	display:inline-block;
+	width:47%;
+	vertical-align:top;
+}
+
+.business-intro-head{
+	width:200px;
+	border-bottom:1px solid #000;
+	padding-bottom:4px;
+	margin-top:40px;
+}
+.business-intro-head h4{
+	font-size:18px;
+}
+.business-intro-body{
+	margin-top:48px;
+	margin-bottom:48px;
+	border-bottom:1px solid #f0f0f0;
+	padding-bottom:48px;
+}
+.business-intro-section .text-block-inline > img{
+	width:100%;
+}
+.f-s-24{
+	font-size:24px;
+}
+.business-intro-section .text-block-inline .f-s-24{
+	padding:20px 0;
+}
+.business-intro-section .text-block-inline:nth-of-type(2){
+	margin-left:26px;
+}
+.logo-left{
+	float:left;
+	margin-right:30%;
+}
+.logo-right{
+	float:left;
+}
+.business-logo > ul{
+	margin:20px 0;
+}
+.gallery-section{
+	color:#fff;
+	padding:40px 0;
+}
+.gallery-section .business-intro-head{
+	border-bottom: 1px solid #fff;
+}
+/*map*/
+/*#event-js-map{
+	width:100%;
+	height:454px;
+}*/
+#dituContent{
+	width:660px;height:340px;border:#ccc solid 1px;
+	margin:auto;
+}

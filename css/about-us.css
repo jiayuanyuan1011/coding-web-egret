@@ -1,0 +1,265 @@
+div.banner{
+	background:url(../img/about-us-banner.jpg) no-repeat center;
+	width:100%;
+	height:500px;
+}
+
+
+#dituContent{
+	width:100%;
+	height:454px;
+	border:#ccc solid 1px;
+}
+.main hr{
+	background:url(../img/products-hori-line.png) no-repeat center;
+	height:34px;
+	border:none;
+	margin-top:54px;
+}
+.main .contact hr {
+    border-bottom: 1px solid#000;
+    text-align: center;
+    height: 0;
+    margin-top: 12px;
+    opacity:0.2;
+}
+.brief {
+    position: relative;
+    height: 600px;
+    width: 90%;
+    margin: auto;
+    max-width:1400px;
+}
+/*.brief p{
+	margin-top:56px;
+	padding:0 20%;
+}
+.brief img{
+	margin-top:56px;
+}*/
+.brief-left {
+    position: absolute;
+    left: 88px;
+}
+@media screen and (max-width:1430px){
+	.brief-left {
+    	left: 50px;
+	}
+}
+.brief-right p{
+	font-size:13px;
+	line-height:21px;
+}
+.brief-right {
+    text-align: left;
+    padding-top: 56px;
+    width: 50%;
+    position: absolute;
+    right: 20px;
+}
+@media screen and (min-device-width:320px) and (max-device-width:1024px){
+	.brief{
+		height:auto;
+	}
+	.brief-right {
+    	text-align: left;
+    	padding-top: 16px;
+    	width: 100%;
+    	position: relative;
+    	right: 0;
+	}
+}
+.founder{
+	background:url(../img/about-us-founder.jpg) no-repeat center;
+	height:600px;
+	width:100%;
+	color:#fff;
+	margin-top:50px;
+}
+.founder .mainDes h2{
+	padding:54px 0 35px;
+}
+@media screen and (min-device-width:768px) and (max-device-width:1024px){
+	.founder .mainDes h2{
+	padding:35px 0 35px;
+}
+}
+.founder hr{
+	background:url(../img/products-hori-line-light.png) no-repeat center;
+	margin-top:0;
+}
+.photo{
+	text-align:center;
+}
+.photo li{
+	display:inline-block;
+	/*margin-left:24px;*/
+	text-align:center;
+	padding:10px;
+}
+@media screen and (min-device-width:320px) and (max-device-width:1024px){
+	.photo li {
+    /* display: inline-block; */
+    /* margin-left: 24px; */
+    text-align: center;
+    /* padding: 10px; */
+    /* float: left; */
+    width: 33.33%;
+    float: left;
+    padding:0;
+	}
+}
+.photo li p{
+	line-height:20px;
+	margin-top:10px;
+	font-size:12px;
+}
+.founder-photo{
+	/*width:180px;
+	height:260px;
+	background:#3fa4cf;*/
+	display:block;
+	/*max-width:150px;*/
+	
+}
+@media screen and (min-device-width:320px) and (max-device-width:1024px){
+.founder-photo{
+		display:initial;
+	}
+}
+/*.photo li:nth-of-type(1){
+	margin-left:0;
+}*/
+.contact{
+	width:100%;
+	height:480px;
+}
+.contact>ul{
+	padding-top: 140px;
+}
+.contact ul li{
+	/*width:50%;*/
+	/*float:left;*/
+}
+.contact ul li h6{
+	 font-size:24px;
+	 font-weight:100;
+	 /*width:347px;*/
+	 /*border-bottom:1px solid #000;*/
+	 text-align:center;
+}
+.contact ul li p{
+	color:#727171;
+	font-size:14px;
+	line-height:30px;
+}
+.contact ul li a,
+.contact ul li a:hover,
+.contact ul li a:visited{
+	color:#727171;
+}
+.contact ul li img{
+	vertical-align:middle;
+}
+.contact ul li>div{
+	margin:auto;
+	width:1200px;
+}
+.contact ul li:nth-of-type(2)>div{
+	margin:auto;
+	width:500px;
+}
+.qr{
+	float:left;
+	margin-right:5px;
+	margin-top:-5px;
+}
+.qr:nth-of-type(1){
+	margin-left:-8px;
+}
+.qr span{
+	display:block;
+	text-align:center;
+	color:#727171;
+}
+@media screen and (min-device-width:320px) and (max-device-width:1024px){
+	.contact ul li>div{
+		width:500px;
+	}
+	.contact ul li{
+		width:100%;
+		float:initial;
+	}
+	.contact ul li:nth-of-type(2)>div{
+		margin-top:50px;
+	}
+	.contact>ul{
+		padding-top:80px;
+	}
+	.brief img{
+		display:none;
+	}
+}
+@media screen and (min-device-width:320px) and (max-device-width:480px){
+	.qr img{
+		/*width:70%;*/
+	}
+	.contact ul li:nth-of-type(2)>div,
+	.contact ul li>div{
+		width:100%;
+	}
+	.qr{
+		float:initial;
+		margin:0;
+		text-align:center;
+	}
+	.qr img,
+	.qr span{
+		margin:auto;
+		
+	}
+	.contact ul li h6{
+		width:90%;
+		padding-left:10px;
+	}
+	.contact{
+		height:auto;
+	}
+}
+ul.l {
+    margin-top: 20px;
+}
+.al{
+	text-align:left;
+}
+.ar{
+	text-align:right;
+}
+.l50 {
+    width: 46%;
+    float: left;
+    margin: 0 20px;
+}
+a.generalBtn {
+    width: 260px;
+    height: 63px;
+    display: block;
+    background: #1dafec;
+    color: #fff !important;
+    line-height: 63px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 50px auto;
+}
+a.generalBtn:hover{
+	background: #59cafa;
+}
+
+@media screen and (min-device-width:320px) and (max-device-width:1024px){
+	.ar{
+		text-align:left;
+	}
+	.l50{
+		margin:0;
+	}
+}

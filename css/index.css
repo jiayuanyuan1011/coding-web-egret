@@ -1,0 +1,360 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: 微软雅黑;
+	padding-bottom:33px;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #737373;
+	font-size: 18px;
+	font-family: 微软雅黑;
+}
+.shalong-fix{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.shalong-head{
+	height: 80px;
+	background: url(../imgs/headbg.png) repeat-x;
+}
+.shalong-logo{
+	width: 297px;
+	height: 80px;
+	background: url(../imgs/headlogo.png) no-repeat;
+	margin-left: 25px;
+	float: left;
+}
+.shalong-nav{
+	float: right;
+}
+.shalong-nav li{
+	float: left;
+	height: 80px;
+}
+.shalong-nav li a{
+	display: inline-block;
+	height: 100%;
+	padding: 0 25px;
+	line-height: 80px;
+	text-align: center;
+	font-weight: bold;
+}
+.shalong-nav li a:hover{
+	color: #2B7AD3;
+}
+.shalong-nav li a.active{
+	background: #2B7AD3;
+	color: #fff;
+	font-weight: bold;
+}
+.shalong-navlist{
+	height: 34px;
+}
+.shalong-navlist li{
+	background: url(../imgs/gayback.png) no-repeat;
+	float: left;
+	width: 104px;
+	height: 34px;
+}
+.shalong-navlist li.active{
+	background: url(../imgs/lanback.png) no-repeat;
+}
+.shalong-navlist li a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 34px;
+	color: #fff;
+	cursor: default;
+}
+.shalong-wapper{
+	background: url(../imgs/contenzhanback.jpg) repeat-y;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.shalong-zhancontain{
+	position:relative;
+}
+.shalong-zhancontain .shalong-baoming-text{
+	margin-left: 46px;
+	margin-top: 40px;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.shalong-baomingcon{
+	width: 341px;
+	height: 62px;
+	font-size: 18px;
+	margin-left: 46px;
+	margin-top: 10px;
+}
+.shalong-baomingcon span{
+	display: inline-block;
+	line-height: 28px;
+}
+.shalong-baoming-link{
+	display: inline-block;
+	color: #2B7AD3;
+	font-size: 18px;
+	margin-left: 46px;
+	padding-top: 26px;
+}
+.shalong-baoming{
+	
+	text-align: center;
+	margin-top: 47px;
+}
+.shalong-map{
+	position: relative;
+}
+.shalong-map .shalong-map-img{
+	position: absolute;
+	right: 72px;
+	top: -112px;
+}
+.shalong-location{
+	position: absolute;
+	right: 388px;
+	top: 183px;
+	width: 23px;
+	height: 31px;
+	background: url(../imgs/location.png) no-repeat;
+}
+.shalong-location-text{
+	position: absolute;
+	right: 127px;
+	top: 183px;
+	width: 254px;
+	height: 28px;
+	color: #fff;
+	background: url(../imgs/mapback.png) no-repeat;
+	line-height: 28px;
+	text-align: center;
+}
+.ml46{
+	margin-left: 46px;
+}
+.shalong-lianhe{
+	margin-top: 70px;
+	clear:both;
+}
+.shalong-lianheimg{
+	margin-top: 28px;
+	margin-right:26px;
+	border: 1px solid #F1F0F5;
+	width: 130px;
+	height: 48px;
+}
+
+.egret-meeting-agenda{
+	width:1200px;
+	margin:48px  auto 0;
+
+}
+.egret-meeting-head{
+	width: 100%;
+	height: 32px;
+	background: url(../imgs/headtext.png) no-repeat;
+	border-bottom: 1px solid #2E7FDA;
+}
+.egret-meeting-head p{
+	text-align: center;
+	line-height: 32px;
+	color: #fff;
+	width: 112px;
+	height: 32px;
+}
+.egret-meeting-agenda-h2{
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 50px;
+	font-size:25px;
+}
+.egret-meeting-agenda-text{
+	text-align: center;
+	padding-bottom: 36px;
+}
+.egret-meeting-agenda-time{
+	margin-right: 42px;
+}
+.egret-meeting-agenda-h2.less {
+	margin-top: 30px;
+}
+.egret-meeting-agenda .egret-meeting-agenda-table{ 
+	width:1000px; 
+	border:1px solid #e6e6e6; 
+	border-top:none;
+	margin:0 auto;
+}
+.egret-meeting-agenda .egret-meeting-agenda-table .egret-meeting-agenda-thead tr{ 
+	height:60px; 
+	background:#206bc0; 
+	font-size:20px; 
+	color:#fff; 
+	line-height:60px; 
+	text-align:center;
+}
+.egret-meeting-agenda .egret-meeting-agenda-table .egret-meeting-agenda-thead .egret-meeting-agenda-td1, .egret-meeting-agenda-table .egret-meeting-agenda-thead .egret-meeting-agenda-td2{ 
+	border-right:1px solid #fff;
+}
+.egret-meeting-agenda .egret-meeting-agenda-table .egret-meeting-agenda-tbody .egret-meeting-agenda-td1, .egret-meeting-agenda-table .egret-meeting-agenda-tbody .egret-meeting-agenda-td2{ 
+	border-right:1px solid #e6e6e6;
+}
+.egret-meeting-agenda .egret-meeting-agenda-table .egret-meeting-agenda-tbody .egret-meeting-agenda-tr1{ 
+	
+	background:#fff;
+}
+.egret-meeting-agenda .egret-meeting-agenda-table .egret-meeting-agenda-tbody .egret-meeting-agenda-tr2{ 
+	background:#f1f1f1;
+}
+.egret-meeting-agenda .egret-meeting-agenda-table .egret-meeting-agenda-tbody .egret-meeting-agenda-td1{ 
+	text-align:center;
+}
+.egret-meeting-agenda .egret-meeting-agenda-table .egret-meeting-agenda-tbody .egret-meeting-agenda-td2{ 
+	text-align:left;
+}
+.egret-meeting-agenda .egret-meeting-agenda-table .egret-meeting-agenda-tbody .egret-meeting-agenda-td2-cols{
+	padding-left:0;
+}
+.egret-meeting-agenda .egret-meeting-agenda-table .egret-meeting-agenda-tbody .egret-meeting-agenda-td3{ 
+	text-align:left;
+}
+.egret-meeting-agenda .egret-meeting-agenda-table .egret-meeting-agenda-tbody tr{ 
+	height:40px; 
+	line-height:32px; 
+	font-size:16px; 
+	color:#000;
+}
+.egret-meeting-agenda-w153{ 
+	width:138px; 
+	overflow:hidden;
+	padding-left: 15px;
+}
+.egret-meeting-agenda-w375{ 
+	width:360px; 
+	overflow:hidden;
+	padding-left: 15px;
+	border-right: 1px solid #E6E6E6;
+}
+.egret-meeting-agenda-w332{ 
+	width:317px; 
+	overflow:hidden;
+	padding-left: 15px;
+}
+
+.egret-huigu-container{
+	clear: both;
+	margin-top: 80px;
+	overflow: hidden;
+
+}
+.egret-huigu-container ul{
+	margin-top: 20px;
+}
+.egret-huigu-container li{
+	float: left;
+	margin-right: 9px;
+}
+.egret-huigu-container li.last{
+	margin-right: 0px;
+}
+.egret-huigu-container li img{
+	width: 293px;
+}
+.egret-sitemap-container{
+	width: 1200px;
+	clear: both;
+	margin-top: 70px;
+	overflow: hidden;
+}
+.egret-sitemap-container .egret-meeting-head{
+	margin-bottom: 36px;
+}
+.egret-sitemap-midl{
+	float: left;
+	margin-right: 84px;
+}
+.egret-sitemap-left,
+.egret-sitemap-right{
+	float: left;
+	margin-right: 30px;
+}
+.egret-hezuo-cont .egret-sitemap-right{
+	margin-left: 74px;
+}
+.egret-sitemap-left{
+	width: 500px;
+	height:310px;
+	background-color: #eaeaea;
+}
+.egret-sitemap-midl h3,
+.egret-sitemap-right h3{
+	font-size:16px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.egret-sitemap-midl p,
+.egret-sitemap-right p{
+	color:#737373;
+	font-size: 14px;
+	line-height: 20px;
+}
+.egret-sitemap-midl-address{
+	margin-bottom: 45px;
+}
+.egret-sitemap-right a{
+	color:#0090ff;
+	font-size: 14px;
+}
+.shalong-footer{
+	clear: both;
+	text-align: center;
+	color: #737373;
+	overflow: hidden;
+}
+.shalong-hezuoinfo{
+	margin-top: 45px;
+	padding-bottom: 200px;
+}
+.egret-hezuo-erweima li{
+	float: left;
+	margin-right: 10px;
+}
+
+.egret-hezuo-cont{
+	margin-top: 30px;
+
+}
+.shalong-club-cont{
+	text-indent: 40px;
+	padding-top: 23px;
+	line-height: 30px;
+}
+.shalong-getmore{
+	color: #3B8BE4;
+	font-size: 14px;
+}
+.shalong-lianhe-row2{
+	width: 600px;
+	float:left;
+	margin-bottom: 57px;
+	margin-top:64px;
+}
+.shalong-lianhe-row2 .egret-meeting-head{
+	margin-bottom: 29px;
+	width: 573px;
+}
+.shalong-lianhe-row2 .shalong-lianheimg{
+	border: 1px solid #F1F0F5;
+}

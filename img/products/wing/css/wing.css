@@ -1,0 +1,231 @@
+.body{
+	    font: 14px/1.5 Microsoft YaHei,tahoma;
+}
+.header {
+    background: #222;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 50px 0 0;
+    min-height: 600px;
+    position: relative;
+}
+.header h2 {
+    color: #fff;
+    padding: 100px 0 0 0;
+    font-weight: 100;
+    font-size: 50px;
+}
+.span-name1{
+    color:#fff;
+	padding: 25px 130px 0 0;
+    font-size:20px;
+	text-align:left;
+}
+.bg{
+height:523px;
+width:618px;
+}
+.bg1 {
+    background-repeat: no-repeat;
+    background-position: center 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+	height:150px;
+}
+.bg2 {
+    background-repeat: no-repeat;
+    background-position: center 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+	height:1072px;
+}
+
+.link-name {
+    color: #fff;
+    font-size: 40px;
+}
+.link-name:hover, .link-name:focus {
+    color: #fff;
+    font-size: 40px;
+	text-decoration: none;
+}
+.func-name {
+    color: #020202;
+    font-size: 40px;
+}
+.func-name:hover, .func-name:focus {
+    color: #020202;
+    font-size: 40px;
+    text-decoration: none;
+}
+.side1 {
+    text-align:center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.step1{
+margin:-36px -36px -36px -36px;
+}
+
+.sep3{
+height:100px;
+}
+.sep4{
+height:50px;
+}
+
+.word-color-span{
+color:#fff;
+padding-top:20px;
+padding-bottom:20px;
+}
+
+.func-margin{
+margin-top:70px;
+margin-bottom:120px;
+}
+.word-color-center{
+color:#fff;
+text-align:center;
+}
+.col-xs-4{
+text-align:center;
+}
+
+.title-border{
+	position: absolute;
+	border: 3px #fbff4d solid;/*FBFF4D FAFF8A*/
+	width: 257px;
+	height: 60px;
+	left:20px;
+	top:0;
+}
+.title-name{
+color: #020202;
+padding: 15px 0 0 0;
+font-size: 20px;
+text-align: center;
+display:block;
+width: 267px;
+height: 60px;
+position: absolute; 
+top: 10px ;
+left:30px; 
+background-color: #fbff4d;
+
+}
+a.title-name:hover, .title-name:focus {
+text-decoration: none;
+background-color: #faff8a;
+/*transition: left 1s;*/
+color: #000000;
+}
+
+.biankuangyidong{
+	left: 0px;
+    position: absolute;
+    top: 0px;
+}
+.biankuangyidong-out{
+	position: absolute;
+	left:25px;
+	top:25px;
+}
+
+.jianxi1{
+	padding-right: 10px;
+}
+.jianxi2{
+	padding-left: 10px;
+}
+
+.play_div{
+	margin-top:60px;
+	height: 461px;
+	width: 865px;
+}
+@media screen and (min-width:320px) and (max-width:1024px){
+	.play_div{
+		transform: scale(0.7,0.7);
+	}
+}
+.play_bg{
+	position: absolute;
+}
+.play_border{
+ 	position: absolute;
+ 	z-index: 888;
+    margin-left: 92px;
+    margin-top: 35px;
+    width: 679px;
+    height:362px;
+}
+.play{
+ 	position: absolute;
+    margin-left: 390px;
+    margin-top: 0px;
+    z-index: 999;
+    top: 40%;
+}
+.play_window{
+ 	position: absolute;
+    margin-left: 92px;
+    margin-top: 35px;
+    width: 679px;
+    height:362px;
+}
+
+.texing1{
+ 	position: absolute;
+ 	transform: scale(0.8,0.8);
+}
+.texing1 img{
+ 	position: absolute;
+}
+.texing1 .texing1banner{
+ 	margin-left: 25px;
+	margin-top: 25px;
+	width: 565px;
+	height:320px;
+}
+
+.texing2{
+ 	position: absolute;
+ 	transform: scale(0.8,0.8);
+}
+.texing2 img{
+ 	position: absolute;
+}
+.texing2 .texing2banner{
+    margin-left: 90px;
+    margin-top: 30px;
+    width: 565px;
+    height: 350px;
+}
+
+.texing3{
+ 	position: absolute;
+ 	transform: scale(0.8,0.8);
+}
+.texing3 img{
+ 	position: absolute;
+}
+.texing3 .texing3banner{
+ 	margin-left: 25px;
+	margin-top: 25px;
+	width: 565px;
+	height:320px;
+}
+
+.texing{
+	height: 500px;
+}
+
+.winglogo{
+ width: 0px;
+ height: 0px;
+  margin-top: 80px;;
+}

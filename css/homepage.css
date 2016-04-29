@@ -1,0 +1,552 @@
+
+@media screen and (min-width:1024px){
+	body{
+		min-width:1000px;
+	}
+}
+
+.section h2{
+	font-size:36px;
+	padding:70px 0;
+}
+@media screen and (min-width:320px) and (max-width:1024px){
+	.section h2{
+	font-size:26px;
+}
+}
+.section{
+	position:relative;
+	width:100%;
+
+}
+.small-banner{
+	padding-top:3px;
+}
+@media screen and (min-width:320px) and (max-width:1024px){
+	.small-banner{
+		padding-top:0;
+	}
+}
+.kv-3{
+	display:flex;
+	display:-webkit-flex;
+	justify-content:space-around;
+	-webkit-justify-content:space-around;
+}
+.kv-3 li{
+	display:block;
+	width:33%;
+}
+.kv-3 li img{
+	width:100%;
+}
+@media screen and (min-width:320px) and (max-width:1024px){
+	.kv-3{
+		display:initial;
+	}
+	.kv-3 li{
+		width:100%;
+	}
+}
+/*slider*/
+.banner { 
+	position: relative; 
+	overflow: auto; 
+	color:#fff;
+}
+.section1 img{
+	width:100%;
+}
+@media screen and (min-width:320px) and (max-width:1024px){
+	.section1 {display:none;}
+}
+.banner ul li{
+	width:100%;
+	/*height:800px;*/
+	float: left;
+	text-align:center;
+}
+.section1 ul li img{
+	width:100%;
+	/*max-width:1920px;*/
+}
+/*.section1 ul li:nth-of-type(1){
+	background:url(../img/slider-1.jpg) no-repeat;
+	background-size:100% 100%;
+}
+.section1 ul li:nth-of-type(2){
+	background:url(../img/slider-2.jpg) no-repeat;
+	background-size:100% 100%;
+}
+.section1 ul li:nth-of-type(3){
+	background:url(../img/slider-3.jpg) no-repeat;
+	background-size:100%;
+}
+.section1 ul li:nth-of-type(4){
+	background:url(../img/slider-4.jpg) no-repeat;
+	background-size:100%;
+}
+.section1 ul li:nth-of-type(5){
+	background:url(../img/slider-5.jpg) no-repeat;
+	background-size:100%;
+}
+.section1 ul li:nth-of-type(6){
+	background:url(../img/slider-6.jpg) no-repeat;
+	background-size:100%;
+}*/
+.section1 ul li a{
+	width:100%;
+	height:100%;
+	display:block;
+}
+.dots {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	text-align: center;
+}
+.dots li {
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	margin: 0 4px;
+	text-indent: -999em;
+	/*border: 2px solid #fff;*/
+	border-radius: 6px;
+	cursor: pointer;
+	opacity: .4;
+	-webkit-transition: background .5s, opacity .5s;
+	-moz-transition: background .5s, opacity .5s;
+	transition: background .5s, opacity .5s;
+	-o-transition: background .5s, opacity .5s;
+	-ms-transition: background .5s, opacity .5s;
+	background:#ccc;
+}
+.dots li.active {
+	opacity: 1;
+}
+.dotStyle1 .dots li.active{
+	background: #fff;
+}
+.dotStyle2 .dots li.active{
+	background: #1dafec;
+}
+.section1 h1{
+	font-size:45px;
+}
+.section1 p{
+	font-size: 18px;
+    margin: 17px 0;
+}
+.generalBtn{
+	background: #1dafec;
+    width: 220px;
+    height: 63px;
+    line-height: 63px;
+    border: none;
+    cursor: pointer;
+    color:#fff;
+    font-size:24px;
+    text-align:center;
+    display:block;
+    border-radius:4px;
+}
+.generalBtn:hover{
+	background:#59cafa;
+}
+.banner .container{
+	text-align:center;
+	position:relative;
+}
+
+
+/*body*/
+.section h2{
+	text-align:center;
+}
+.section h5{
+	font-size:20px;
+	text-align:center;
+	font-weight:100;
+	margin:20px 0 10px 0;
+	color:#000;
+	height:45px;
+}
+.section1 .container{
+	padding-top:120px;
+}
+.section1 .textContainer{
+    text-align: left;
+    position: absolute;
+    top: 288px;
+    width:555px;
+}
+.section1 .container img{
+	position: absolute;
+}
+.section2{
+	color:#000;
+	max-width:1920px;
+	margin:auto;
+}
+
+.section2 p{
+	font-size:15px;
+	padding:0 6%;
+	color:#757575;
+}
+.section2 .container .cover {
+    margin: 60px auto 50px;
+    padding-top: 187px;
+    position: relative;
+    width: 865px;
+    height: 460px;
+}
+.section2 .container .cover>img{
+	width:100%;
+}
+.section2 .container .cover .gif {
+    width: 75.5%;
+    border: 0px solid #000;
+    height: 57%;
+    position: absolute;
+    left: 12%;
+    bottom: 8.5%;
+    background: #ccc;
+}
+.section2 .container .cover .gif>img{
+	width:100%;
+}
+
+.section2 .container .cover .gif .play{
+    width: 80px;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+}
+.section2 .container .cover .gif .play_border{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    left: -5px;
+    top: -15px;
+    border: 10px #000 solid;
+}
+/*
+.section2 .container img{
+	margin:60px 0 50px;
+	padding-top:187px;
+}
+*/
+
+@media screen and (min-width:320px) and (max-width:1024px){
+    /*
+	.section2 .container img{
+		width:90%;
+		margin-top:314px;
+	}
+    */
+	.section2 .container .cover {
+    width: 288px;
+    padding-top: 187px;
+    margin: 314px auto 0;
+    height: 179px;
+    position: relative;
+}
+
+    .section2 .container .cover  video{
+            width: 215px;
+            height:115px;
+    }
+    
+    .section2 .container .cover .gif .play{
+        width: 40px;
+        position: absolute;
+        left: 40%;
+        top: 40%;
+    }
+    
+    .section2 .container .cover .gif .play_border{
+        width: 93%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        border: 10px #000 solid;
+        top: -12px;
+    }
+
+.section2 .container .cover .gif {
+    width: 74%;
+    border: 0px solid red;
+    height: 32%;
+    position: absolute;
+    left: 12%;
+    bottom: 12%;
+     background: #ccc; 
+}
+	.arrows{
+		display:none;
+	}
+}
+.section2 ul li{
+	height:900px;
+}
+.prev,
+.next{
+	position:absolute;
+	cursor:pointer;
+}
+.prev{left:10%;}
+.next{right:10%;}
+
+
+.section3{
+	height:699px;
+	background:url(http://official.egret.com/new-egret/img/homepage-s3-bg.jpg) no-repeat center;
+	color:#fff;
+}
+@media screen and (min-width:320px) and (max-width:1024px){
+	.section3{
+	height:auto;
+	background:#fff;
+}
+}
+.productDes{
+	width:90%;
+	max-width:1201px;
+	background:#000;
+	height:236px;
+	border:1px solid #272727;
+	margin:auto;
+	position:relative;
+}
+.section3 .logos{
+	text-align:center;
+	width:80px;
+	justify-content:space-around;
+	margin:38px auto 0;
+}
+.productLogo span{
+	display:block;
+	color:#fff;
+	font-size:10px;
+}
+.section3 .productLogo{
+	width:80px;
+	cursor:pointer;
+}
+.productDes .product-img{
+	background-image:url(http://official.egret.com/new-egret/img/product-des-engine.png);
+	float:left;
+	min-width:220px;
+	width:20%;
+	height:238px;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.productDes .product-text{
+	color:#fff;
+	float:left;
+}
+.productDes h3{
+	margin:10px 0;
+	font-size:48px;
+	font-weight:100;
+}
+img.downArrow{
+	position:absolute;
+	margin-top:-1px;
+}
+
+.section4 .newsBox{
+	width:374px;
+	padding-bottom:30px;
+	text-align:center;
+}
+.newsBox img{
+	width:98%;
+}
+.newsBox span{
+	color:#757575;
+	text-align:left;
+	font-size:14px;
+}
+.section4 p{
+	color: #757575;
+    
+    padding: 0 4px;
+    text-align: justify;
+}
+.section4 .newsContainer{
+	width:66%;
+	min-width:1200px;
+	justify-content:space-around;
+	margin:auto;
+	margin: 0 auto 66px;
+}
+@media screen and (max-width:1124px){
+	.section4 .newsContainer{
+		min-width:700px;
+	}
+}
+@media screen and (min-width:320px) and (max-width:480px){
+	.section4 .newBox{
+		margin:auto;
+	}
+	.section4 .newsContainer{
+		width:100%;
+		min-width:0;
+	}
+	.section4 img{
+		width:100%;
+	}
+	.section4 p{
+		text-align:left;
+		padding:0 15px;
+	}
+}
+.section5{
+	background:url(http://official.egret.com/new-egret/img/homepage-s5-bg.jpg) no-repeat center;
+	width:100%;
+	height:600px;
+	color:#fff;
+	text-align:center;
+}
+.section5 .generalBtn{
+	width:360px;
+	height:87px;
+	line-height:87px;
+	margin:76px auto;
+}
+.section5 h2{
+	padding:167px 0 26px;
+}
+@media screen and (min-width:320px) and (max-width:480px){
+	.section5 p{
+		padding:0 14px;
+		text-align:left;
+	}
+	
+}
+
+/*手机端产品列表,新闻*/
+@media screen and (min-width:320px) and (max-width:1024px){
+	.section3 .mobile .icon{
+		float:left;
+		margin:20px 10px 45px;
+	}
+	.section3 .mobile .des{
+		margin:20px 10px 0 0
+	}
+	.section3 .mobile li{
+		/*padding:20px 10px;*/
+		border-top:1px solid #d9d9d9;
+		display:table;
+		display:-webkit-table;
+		display:-moz-table;
+		width:100%;
+	}
+	.section3 .mobile li:nth-of-type(odd){
+		background:#fafafa;
+	}
+	.section3 .mobile li:nth-of-type(even){
+		background:#fff;
+	}
+	.section3 .mobile b{
+		color:#000;
+	}
+	.section3 .mobile p{
+		line-height:24px;
+		color:#9f9f9f;
+	}
+	.section4{
+		background:#000;
+	}
+	.section4 .newsBox{
+		padding:20px;
+		width:auto;
+	}
+	.section4 h5{
+		color:#fff;
+	}
+	.section4 .newsContainer{
+		margin:auto;
+	}
+	.section5 h2{
+		padding:100px 0 26px;
+	}
+}
+
+
+.section-lark{
+	background:url(http://official.egret.com/new-egret/img/homepage-lark-bg.jpg) no-repeat center;
+	height:570px;
+	position:relative;
+	width:100%;
+}
+.lark-div{
+	width:830px;
+	padding-top:94px;
+	margin:auto;
+	color:#fff;
+}
+@media screen and (min-width:320px) and (max-width:1024px){
+	.lark-div{
+	width:100%;
+	padding-top:55px;
+	}
+	
+}
+.lark-text-div {
+    
+    width: 600px;
+    margin:20px auto;
+    text-align:center;
+}
+
+.lark-text-div .lark-text-title{
+	font-size:36px;
+}
+.lark-text-div .lark-text-body{
+	font-size:14px;
+}
+.lark-text-div .lark-text-body p{
+	margin:10px 0 30px;
+}
+.lark-text-body .generalBtn{
+	margin:auto;
+	font-size:20px;
+}
+@media screen and (min-width:320px) and (max-width:1024px){
+	.lark-text-div{
+		float:none;
+		width:100%;
+		margin-left:0;
+	}
+	.lark-text-div .lark-text-title{
+		text-align:center;
+	}
+	.lark-text-div .generalBtn{
+		margin:auto;
+	}
+	.lark-text-div .lark-text-body{
+		padding:0 15px;
+	}
+}
+.lark-icon {
+   width:153px;
+   margin:auto;
+}
+.lark-icon img {
+    width:100%;
+	}
+@media screen and (min-width:320px) and (max-width:1024px){
+	.lark-icon{
+		
+		text-align:center;
+	}
+	.lark-icon img {
+    width: 100px;
+	}
+}

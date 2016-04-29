@@ -1,0 +1,243 @@
+.banner{
+	/*background:url(../img/case-study-banner.jpg) no-repeat center;
+	height:500px;
+	width:100%;*/
+}
+.banner img{
+	width:100%;
+}
+/*.mainDes h2{
+	padding:112px 0 32px;
+	font-size:30px;
+	font-weight:100;
+	text-align:center;
+}*/
+
+.mainDes p{
+	text-align:center;
+	font-size:12px;
+}
+@media screen and (min-device-width:320px) and (max-device-width:480px){
+	.mainDes p{
+	text-align:left;
+	font-size:12px;
+	padding:0 20px;
+	}
+}
+.main hr{
+	background:url(../img/products-hori-line.png) no-repeat center;
+	height:34px;
+	border:none;
+	margin-top:54px;
+}
+.banner h1{
+	font-size:60px;
+	color:#fff;
+	text-transform:uppercase;
+	font-weight:100;
+	padding-top:254px;
+}
+@media screen and (min-device-width:320px) and (max-device-width:480px){
+	.banner h1{
+		font-size:38px;
+	}
+}
+.banner p{
+	font-size:24px;
+	color:#fff;
+}
+.banner p,
+.banner h1{
+	padding-left:16%;
+}
+.showCase{
+	width:1090px;
+	margin:auto;
+}
+.showCase li{
+	margin:0 0 30px 30px;
+	display:inline-block;
+	width:30%;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+	vertical-align:top;
+	position:relative;
+}
+.showCase li>img{
+	/*width:340px;*/
+	width:100%;
+	cursor:pointer;
+}
+.showCase li p {
+    text-align: center;
+}
+@media screen and (min-width:320px) and (max-width:1024px){
+	.showCase li>img{
+	width:100%;
+	}
+	.showCase{
+		width:100%;
+		/*text-align:center;*/
+		margin-left:4%;
+	}
+	.showCase li{
+	margin:0 0 12px 0;
+	display:inline-block;
+	font-size:12px;
+	box-shadow:none;
+	}
+	.showCase li p{
+		font-size:11px;
+	}
+}
+.showCase li:nth-of-type(3n+1){
+	/*margin-left:0;*/
+}
+#pageNav{
+	margin:20px auto;
+}
+.light-theme a, .light-theme span{
+	box-shadow:none;
+}
+
+.show-case-game-des{
+    font-size: 14px;
+    line-height: 21px;
+    color: #676767;
+    padding:0 16px 30px;
+    height:60px;
+}
+@media screen and (min-width:320px) and (max-width:1024px){
+	.show-case-game-des{
+		font-size:12px;
+		height:100px;
+	}
+}
+.show-case-game-title {
+    position: relative;
+    height: 80px;
+    padding: 0 10px;
+}
+.show-case-game-title .game-name {
+    font-size: 22px;
+    position:absolute;
+    bottom:10px;
+}
+.show-case-game-title .players{
+	font-size:14px;
+	position:absolute;
+    bottom:10px;
+    right:20px;
+    display:none;
+}
+.show-case-game-title hr {
+    background: none;
+    height: auto;
+    border-top: inherit;
+    margin: auto;
+    position: absolute;
+    bottom: 3px;
+    width: 90%;
+}
+@media screen and (min-width:320px) and (max-width:1024px){
+	.show-case-game-title{
+		text-align:center;
+		height:auto;
+		padding:0;
+	}
+	.show-case-game-title .game-name {
+    	font-size: 14px;
+    	position:relative;
+    	bottom:initial;
+	}
+	.show-case-game-title .players{
+		font-size: 14px;
+    	position:relative;
+    	bottom:initial;
+    	right:initial;
+	}
+	.show-case-game-title hr {
+    	background: none;
+    	height: 1px;
+    	border-top: 1px solid #ccc;
+    	position: relative;
+    	bottom: 0;
+    	width: 100%;
+    	margin: 6px 0px;
+	}
+	.inline {
+    display: inherit;
+	}
+}
+.game-qr{
+	width: 100%;
+    background: rgba(0,0,0,0.7);
+    /*height: 327px;*/
+    top:0;
+    position: absolute;
+    text-align:center;
+}
+.msk{
+	width:100%;
+	top:0;
+	position:absolute;
+	z-index:1000;
+}
+
+.game-qr > img{
+	width:250px;
+	height:250px;
+	margin-top:30px;
+}
+@media screen and (min-width:320px) and (max-width:1024px){
+	.game-qr > img{
+	width:186px;
+	height:186px;
+	margin-top:0;
+}
+}
+
+
+/*轮播图*/
+.banner{
+	position:relative;
+}
+.banner ul li{
+	width:100%;
+	/*height:800px;*/
+	float: left;
+	text-align:center;
+}
+.banner ul li img{
+	width:100%;
+	/*max-width:1920px;*/
+}
+.dots {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -3px;
+	text-align: center;
+}
+.dots li {
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	margin: 0 4px;
+	text-indent: -999em;
+	/*border: 2px solid #fff;*/
+	border-radius: 6px;
+	cursor: pointer;
+	opacity: .4;
+	-webkit-transition: background .5s, opacity .5s;
+	-moz-transition: background .5s, opacity .5s;
+	transition: background .5s, opacity .5s;
+	-o-transition: background .5s, opacity .5s;
+	-ms-transition: background .5s, opacity .5s;
+	background:#ccc;
+}
+.dots li.active {
+	opacity: 1;
+}
+.dotStyle .dots li.active{
+	background: #fff;
+}

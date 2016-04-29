@@ -1,0 +1,1741 @@
+/* Global Reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	
+}
+article, 
+aside, 
+details, 
+figcaption, 
+figure, 
+footer, 
+header, 
+hgroup, 
+menu, 
+nav, 
+section {
+	display: block;
+}
+ol, 
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+table.pad td {
+	padding: 10px;
+}
+pre, code {
+	display: block;
+	max-width: 100%;
+	font: 12px/24px Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", 						Courier, monospace;
+	margin:0 0 20px 0;
+	padding: 10px;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.clearfix:after { content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix { zoom:1; }
+.overflow-hidden{overflow: hidden;}
+
+/* General */
+
+* {
+	margin:0;
+	padding:0;
+	outline:0 none;
+}
+body {
+	font: normal 100% 'Microsoft Yahei'，Helvetica, Arial, sans-serif;
+	-font: normal 100% Menlo, 'Ubuntu Mono', Consolas, 'Courier New', 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+	font-size: 1em;
+}
+pre, code {
+	background-color: #EDEDED;
+	border: 1px solid #D9D9D9;
+}
+a{
+	text-decoration: none;
+}
+#sidebar,
+#sidebar_second,
+#footer {
+	font-size:12px;
+}
+
+.middle-modle{
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.white{
+	color: white;
+}
+
+/* Header */
+
+#header {
+	width:100%;
+	clear: both;
+	padding:0;
+	background-color:#000;
+	box-shadow: 0 1px 0 rgba(255,255,255,.1);
+	position: relative;
+	z-index: 5;
+}
+.header-container{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+	height:70px;
+	position: relative;
+}
+/* navgation */
+.header-left{
+	position: absolute;
+	z-index: 1;
+	left:0;
+	top: 0;
+	height:70px;
+}
+.header-left ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.header-left ul li{
+	float: left;
+	padding-top:45px;
+	-webkit-transition:padding-top 0.3s ease;
+	-moz-transition:padding-top 0.3s ease;
+	-o-transition:padding-top 0.3s ease;
+	-ms-transition:padding-top 0.3s ease;
+	transition:padding-top 0.3s ease;
+}
+.header-left a{
+	display: block;
+	padding: 0px 15px 6px 15px;
+	color: #fff;
+	font-size: 14px;
+}
+.header-navigation-bottom{
+	display: block;
+	width: 60px;
+	height:5px;
+	background: #1aa1ec;
+	position: absolute;
+	left:0;
+	bottom:0px;
+	-webkit-transition:left 0.3s ease;
+	-moz-transition:left 0.3s ease;
+	-o-transition:left 0.3s ease;
+	-ms-transition:left 0.3s ease;
+	transition:left 0.3s ease;
+}
+
+.header-left ul li:hover{
+	padding-top:42px;
+}
+.header-left ul li:hover ~ span{
+	width:60px;
+}
+.header-left ul li:nth-child(1):hover ~ span{
+	left:0;
+}
+.header-left ul li:nth-child(2):hover ~ span{
+	left:58px;
+}
+.header-left ul li:nth-child(3):hover ~ span{
+	left:116px;
+}
+.header-left ul li:nth-child(4):hover ~ span{
+	left:174px;
+}
+.header-left ul li:nth-child(8):hover ~ span{
+	width:60px;
+	left:233px;
+}
+.header-left ul li:nth-child(9):hover ~ span{
+	width:80px;
+	left:298px;
+}
+
+.header-left ul li:nth-child(5){
+	display: none;
+}
+.header-left ul li:nth-child(6){
+	display: none;
+}
+.header-left ul li:nth-child(7){
+	display: none;
+}
+
+
+.logo{
+	width:181px;
+	height:91px;
+	position: absolute;
+	top:0px;
+	left:50%;
+	margin-left:-90px;
+	background: url('http://official.egret.com/egret/images/globalicon.png') no-repeat center;
+	z-index:5;
+}
+.header-ico{
+	display: none;
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	top:8px;
+	background: url('http://official.egret.com/egret/images/navmore.png') 17px 16px no-repeat;
+	width:45px;
+	height:44px;
+	cursor: pointer;
+	-webkit-transition:all 0.4s;
+	-moz-transition:all 0.4s;
+	-o-transition:all 0.4s;
+	-ms-transition:all 0.4s;
+	transition:all 0.4s;
+}
+.open .header-ico{
+	-webkit-transform:scaleY(-1);
+	-moz-transform:scaleY(-1);
+	-ms-transform:scaleY(-1);
+	-o-transform:scaleY(-1);
+	transform:scaleY(-1);
+	top:2px;
+}
+
+.logo-title{
+	display: none;
+	color:#fff;
+	line-height: 52px;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+/* header right */
+.header-right{
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	text-align: right;
+	color:#1aa1ec;
+	padding-right:10px;
+}
+.header-register{
+	font-size: 12px;
+	padding-top:8px;
+	display: none;
+}
+.header-register span{
+	cursor: pointer;
+}
+.header-register span:nth-child(1){
+	margin-right: 10px;
+	padding-right: 10px;
+	border-right: 1px solid #1aa1ec;
+}
+.header-tool{
+	padding-top:44px;
+}
+.header-tool li{
+	float: left;
+	padding:0 10px;
+}
+.header-tool a{
+	color: #fff;
+	font-size: 14px;
+}
+.header-tool a:hover{
+	-text-shadow: 1px 1px 3px #ccc;
+	color: #1aa1ec;
+}
+.header-tool li:last-child{
+	padding-right:0;
+}
+
+/*banner*/
+
+.banner{ 
+	max-width: 100%;
+	position:relative; 
+	overflow:hidden;
+}
+.banner ul{ position:absolute; left:0;}
+.banner ul li{ 
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	filter: alpha(opacity:0);
+}
+.banner ul li img{ 
+	position:relative; 
+	left:0;
+	width:100%;
+}
+
+.banner ul{
+	position: absolute;
+}
+.banner-prev,.banner-next{
+	position: absolute;
+	top:50%;
+	background: red;
+	cursor: pointer;
+	width:31px;
+	height: 102px;
+	background: url('http://official.egret.com/egret/images/ico.png') no-repeat 12px 10px rgba(0,0,0,.3);
+	padding: 10px;
+	margin:-61px 0 0 0;
+	z-index: 5;
+}
+.banner-next{
+	background-position: -31px 10px;
+}
+.banner-next{
+	right: 0px;
+}
+
+#banner-btn{ 
+	position:absolute; 
+	width:100%; 
+	text-align:center; 
+	bottom:0;
+}
+#banner-btn a{ 
+	cursor:pointer;
+	display:inline-block; 
+	width:11px; 
+	height:11px; 
+	background:#666666;
+}
+#banner-btn a.active { 
+	background:white;
+} 
+#banner-btn a:hover{ 
+	background:white;
+}
+
+*html .ie6_out{ margin-left:1000px; zoom:1;}
+*html .ie6_in{ position:relative; float:left; margin-left:-1000px;}
+
+
+/*中间内容  4列图片*/
+.middle-cols4{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	padding: 30px 40px 0;
+	margin-bottom:15px;
+	box-sizing: border-box;
+}
+.middle-cols4 li{
+	width: 25%;
+	-margin-right:12px;
+	float: left;
+	display: inline;
+}
+.middle-cols4-thumb{
+	position: relative;
+	border-right: 10px solid #fff;
+	border-bottom: 10px solid #fff;
+}
+
+/*.middle-cols4-thumb div:hover{
+	position: absolute;
+	width:110%;
+	top:-9px;
+	left:-5%;
+	z-index:2;
+	box-shadow: 1px 1px 18px rgba(0,0,0,0.2);
+}*/
+.middle-cols4 li:nth-child(4){
+	margin-right:0;
+}
+.middle-cols4 img{
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+.middle-cols4-title{
+	display: block;
+	width:100%;
+	height: 30px;
+	background: rgba(0,20,38,.9);
+	line-height: 24px;
+	color:#fff;
+	position: absolute;
+	bottom: 0px;
+	padding-top: 5px;
+	-webkit-animation:animations 0.6s;
+}
+.middle-cols4-title span{
+	margin-left:15px;
+	font-size: 16px;
+	font-weight: normal;
+}
+.middle-cols4-title i{
+	position: absolute;
+	width: 14px;
+	height: 23px;
+	background: url('http://official.egret.com/egret/images/navmore.png') no-repeat -8px -35px;
+	display: block;
+	right: 10px;
+	top: 5px;
+}
+.middle-cols4 li:nth-child(2) .middle-cols4-title{
+	-webkit-animation:animations 0.8s 0.1s;
+}
+.middle-cols4 li:nth-child(3) .middle-cols4-title{
+	-webkit-animation:animations 0.5s 0.15s;
+}
+.middle-cols4 li:nth-child(4) .middle-cols4-title{
+	-webkit-animation:animations 0.8s 0.2s;
+}
+
+
+@-webkit-keyframes animations{
+	0%{height: 100%;opacity: 0.2;padding-top:0;}
+	100%{height: 40px;opacity: 1;}
+}
+
+/* 两列图片 */
+.middle-cols2{
+	box-sizing: border-box;
+}
+.middle-cols2 li{
+	width:50%;
+	float: left;
+	box-sizing: border-box;
+}
+.middle-cols2 .middle-cols4-thumb{
+	margin-right:10px;
+	border-right:none;
+	border-bottom:none;
+}
+.middle-cols2 .middle-cols4-thumb img{
+	width: 100%;
+	display: block;
+}
+.middle-cols2 .middle-cols4-thumb div:hover{
+	position: static;
+	width:100%;
+	top:0;
+	left:0;
+	z-index:2;
+	box-shadow:none;
+}
+.middle-cols2-title{
+	background: none;
+	position: static;
+	color: #000;
+	padding-top: 0;
+	font-size:14px;
+	text-align:center;
+}
+
+/*三列*/
+.middle-cols3 .middle-newaction-content-moudle:nth-child(n){
+	width: 30%;
+	padding: 0;
+	margin-right: 2%;
+}
+.middle-cols3 .middle-newaction-content-moudle:hover{
+	background: none;
+}
+.middle-cols3 .middle-newaction-content-moudle-icon{
+	width: 111px;
+	height: 125px;
+	margin-right:15px;
+}
+/*.middle-product1,
+.middle-product2,
+.middle-product3,
+.middle-product4,
+.middle-product5{
+	background: url('http://official.egret.com/egret/images/product.png') no-repeat;
+}
+.middle-product2{
+	background-position: 0 -135px;
+}
+.middle-product3{
+	background-position: 0 -260px;
+}
+.middle-product4{
+	background-position: 0 -395px;
+}
+.middle-product5{
+	background-position: 0 -530px;
+}*/
+
+/*最新动态*/
+.middle-newaction,.middle-newaction-type2{
+	max-width:340px;
+	height:36px;
+	margin: 50px auto;
+	border-bottom:1px solid #555555;
+	position: relative;
+	padding-bottom: 20px;
+	text-align: center;
+}
+.middle-newaction-type2{
+	max-width: 360px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+.middle-newaction-title{
+	font-size:26px;
+}
+.middle-newaction-inner-style{
+	border-radius: 20px;
+	height: 5px;
+	width: 5px;
+	border:2px solid #555;
+	display: block;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	z-index: 1;
+	margin-left: -5px;
+	margin-bottom: -4px;
+	background-color: #fff;
+}
+.middle-newaction-rightMore{
+	position: absolute;
+	right: 0;
+	top:12px;
+	color: #1aa1ec;
+	font-size:13px;
+}
+.middle-newaction-content,.middle-newaction-content-type2{
+	max-width:1320px;
+	margin:0 auto;
+	margin-top:30px;
+}
+.middle-newaction-content-type2{
+	/*用于引擎与工具特点*/
+	padding-left:0px;/*222*/
+}
+.middle-newaction-content-type3{
+	/*用于runtime*/
+	position: absolute;
+	top:180px;
+	left: 50%;
+	z-index:1;
+	margin-left:35px;
+	margin-right: 15px;
+}
+.middle-newaction-content-type3 p{
+	max-width: 420px;
+	display: block;
+	font-size: 12px;
+	line-height: 22px;
+	margin-top:6px;
+	margin-bottom:25px;
+}
+.middle-newaction-content-type3 h2{
+	font-size: 22px;
+}
+.middle-newaction-content-bg-runtime{
+	max-width: 100%;
+	background: url('http://official.egret.com/egret/images/runtimeindex2.jpg') no-repeat top center;
+	background-size:cover;
+	moz-background-size:cover;
+	-webkit-background-size:cover;
+	height: 639px;
+	position: relative;
+}
+.middle-newaction-content-bg-runtime .download{
+	display: block;
+	width: 288px;
+	height: 390px;
+	position: absolute;
+	top: 186px;
+	left: 50%;
+	margin-left: -330px;
+	opacity: 0;
+}
+.middle-newaction-content-moudle{
+	width:48%;
+	margin-right: 2%;
+	float: left;
+	margin-bottom:20px;
+	padding:10px;
+	box-sizing: border-box;
+}
+
+.middle-newaction-content-moudle:nth-child(2n){
+	width:50%;
+	margin-right: 0%;
+	box-sizing: border-box;
+}
+.middle-newaction-resetwidth{
+	width:100%;
+}
+.middle-newaction-content-moudle:hover{
+	background: #f2f2f2;
+}
+.middle-newaction-content-moudle-icon{
+	float: left;
+	margin-right: 20px;
+	overflow: hidden;
+}
+.middle-newaction-content-moudle-icon img{
+	display: block;
+}
+.middle-newaction-content-moudle-des{
+	line-height: 20px;
+	font-size: 0.75em;
+	color: #666;
+}
+.middle-newaction-content-moudle-des h3{
+	color:#000;
+}
+.middle-newaction-content-moudle-time{
+	color:#1aa1ec;
+}
+/*产品*/
+.middle-newaction-content-type4{
+	max-width:1336px;
+	margin:0 auto;
+	margin-top:80px;
+	/*padding-left: 80px;*/
+}
+.middle-newaction-content-type4 a{
+	color: #fff;
+}
+.middle-newaction-content-type4 figcaption{
+	display: block;
+	padding: 15px 0 15px 5px;
+}
+.middle-newaction-content-bg-products{
+	max-width: 100%;
+	background: #000 url('http://official.egret.com/egret/images/productsindex.png') no-repeat bottom center;
+	background-size:cover;
+	moz-background-size:cover;
+	-webkit-background-size:cover;
+	min-height: 766px;
+	position: relative;
+}
+.middle-product ul{
+	display:flex;
+	flex-flow: row wrap;
+	-webkit-box-pack: justify;
+  	-moz-box-pack: justify;
+  	-ms-flex-pack: justify;
+  	-webkit-justify-content: space-between;
+  	justify-content: space-between;
+}
+.middle-product li{
+	width:16.6%;
+	float: left;
+	margin-bottom:15px;
+	position: relative;
+	overflow: hidden;
+	height: 185px;
+	text-align: center
+}
+.middle-product li:nth-child(7){
+	/*-width:10%;*/
+	float: left;
+}
+.middle-product-erweima1,
+.middle-product-erweima2,
+.middle-product-erweima3,
+.middle-product-erweima4{
+	width: 100%;
+	height: 100%;
+	top: 100%;
+	background-color:  rgba(0,0,0,.6);
+	position: absolute;
+	overflow: hidden;
+	-webkit-transition:top 0.3s;
+	-moz-transition:top 0.3s;
+	-ms-transition:top 0.3s;
+	-o-transition:top 0.3s;
+	transition:top 0.3s;
+}
+.middle-product-erweima1 i,
+.middle-product-erweima2 i,
+.middle-product-erweima3 i,
+.middle-product-erweima4 i{
+	width: 104px;
+	height: 105px;
+	display: block;
+	position: absolute;
+	top:0;
+	left:50%;
+	margin-left: -52px;
+	margin-top: -205px;
+	color:#fff;
+	font-style: normal;
+	text-align: center;
+	-webkit-transition:top 0.3s 0.1s;
+	-moz-transition:top 0.3s 0.1s;
+	-ms-transition:top 0.3s 0.1s;
+	-o-transition:top 0.3s 0.1s;
+	transition:top 0.3s 0.1s;
+}
+.middle-product-erweima2 i p:first-child{
+	padding-top:2rem;
+	font-weight:bold;
+}
+.middle-product-erweimanew p{
+	color:#fff;
+	padding:10px;
+	font-size: 0.8rem;
+	line-height: 1.6;
+}
+.middle-product-erweimanew p:first-child{
+	padding-top:75px;
+}
+.middle-product-erweimanew p:last-child{
+	padding-top:10px;
+}
+.middle-anli-erweima a{
+	display: block;
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+.middle-anli-erweima a:hover img ~ span{
+	top:0;
+	background-position: center center;
+}
+.middle-anli-erweima a:hover img ~ span i{
+	top:50%;
+	margin-top: -52px;
+}
+.middle-newaction-newpadding{
+	margin-top: 51px;
+}
+
+/*友情链接*/
+.middle-new-friends li{
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 15px;
+}
+.middle-friends-padding{
+	margin-top:66px;
+}
+/*.middle-friend-lispan{
+	color:#000;
+	position: absolute;
+	top: 70px;
+	left: 5px;
+	display: block;
+	padding: 5px;
+	height: 44px;
+	font-size: 13px;
+	text-align: center;
+	line-height: 22px;
+	background: rgba(255,255,255,.6);
+	border: 1px solid #666;
+	width: 44px;
+	box-shadow: inset 1px 1px 6px #666;
+	text-shadow: 1px 0px 0 #fff;
+	-webkit-transition:top 0.3s;
+}
+.middle-product li a img:hover ~ .middle-friend-lispan{
+	top:5px;
+}
+.middle-product .middle-friend-lispan:hover{
+	top:5px;
+}*/
+/*新闻列表页*/
+.middle-news{
+
+}
+.middle-news .middle-newaction-content-moudle:nth-child(2n){
+	width: 100%;
+}
+/*新闻详细页*/
+.middle-detail-content{
+	line-height: 28px;
+	font-size: 1em;
+}
+.middle-detail-content p{
+	margin-top:20px;
+}
+.middle-detail-breadnav{
+	font-size: 0.875em;
+	border-bottom: 1px solid #e6e6e6;
+	padding: 0 0 5px 15px;
+}
+.middle-detail-breadnav a{
+	color: #000;
+}
+.middle-detail-breadnav span{
+	color: #1aa1ec;
+}
+.middle-detail-content h1{
+	text-align: center;
+	margin: 40px 0 5px 0;
+}
+.middle-detail-content h2{
+	font-size: 1em;
+	margin-top: 20px;
+}
+.middle-detail-content h4{
+	margin-top: 20px;
+}
+.middle-detail-titletime{
+	text-align: center;
+	font-size: 0.875em;
+	color:#666;
+}
+.middle-detail-titletime span{
+	text-align: center;
+}
+.middle-detail-titletime span:nth-child(3){
+	margin-right:0;
+}
+.middle-detail-content img{
+	max-width: 100%;
+}
+.middle-detail-content ul{
+	text-indent: 2em;
+	font-size: 0.875em;
+}
+.page_navi{width:100%;height:36px;line-height:36px;text-align:center;overflow:hidden;padding-top:1em;}  
+.page_navi a{padding: 1px 6px;margin:2px;text-decoration:none;color:#888;border:1px solid #cccccc;font-size: 14px;}  
+.page_navi a:hover,.page_navi a.current{border:1px solid #1aa1ec;color:#1aa1ec;font-weight:bolder;}  
+/*关于我们页面*/
+.w-tabs-btn li{
+	float: right;
+	padding: 0 5px;
+	font-size: 14px;
+	position: relative;
+	cursor: pointer;
+}
+.w-tabs-btn i{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 0;
+    height: 0;
+    border-top: 10px solid #fff;
+    border-left: 10px solid transparent; 
+}
+.middle-aboutus .w-tabs-btn{
+	padding-bottom:7px;
+}
+.w-tabs-btn .w-tabs-active{
+	color:#009fef;
+}
+/* footer */
+.footer{
+	width: 100%;
+	margin-top: 50px;
+	padding-bottom:10px;
+	border-top: 1px solid #e6e6e6;
+}
+.footer-content{
+	max-width: 1000px;
+	margin:0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.footer-aboutas{
+	text-align: right;
+	padding-top: 5px;
+	padding-bottom:120px;
+}
+.footer a img{
+	opacity:0;
+	filter: alpha(opacity:0);
+}
+
+/*.footer-aboutas-left,.footer-aboutas-right{
+	position: absolute;
+}*/
+/*.footer-aboutas-left{
+	left: 0px;
+	text-shadow: 0 1px 0 #fff;
+}
+/*.footer-aboutas-right{
+	right:0px;
+}
+.footer-aboutas-left dl{
+	float: left;
+}
+.footer-aboutas-left dt{
+	font-size:14px;
+}
+.footer-aboutas-left dd{
+	font-size:13px;
+	line-height: 22px;
+	float: left;
+	margin-right: 5px;
+}
+.footer-aboutas-left dd a{
+	color:#808080;
+}
+.footer-aboutas-right li{
+	width:142px;
+	height:182px;
+	border-radius: 10px;
+	background: white;
+	text-align: center;
+	padding-top:7px;
+	float: left;
+	margin-left: 10px;
+	margin-bottom: 15px;
+}*/
+.footer-content{
+	text-align: center;
+}
+.footer-aboutas a{
+	display: inline-block;
+	font-size: 13px;
+	text-shadow: 0 1px 0 #fff;
+	color: #999;
+	margin-left: 10px;
+}
+.footer-aboutas-friends{
+	margin-top:40px;
+	margin-bottom: 5px;
+}
+.footer-aboutas-friends li{
+	float: left;
+	margin:15px 10px 0 0;
+}
+.footer-aboutas-friends span{
+	font-size: 14px;
+}
+.footer-aboutas-copyright{
+	color:#999;
+	font-size:12px;
+}
+.footer-erweima{
+	display: block;font-size: 13px;padding-top: 5px;color: #999;
+}
+
+#loadingimg,.loadingimg{display:none;height:400px;background:url('http://official.egret.com/egret/images/loading.gif') center no-repeat rgba(0,0,0,0.9);background-size:80px;width:100%;}
+
+/*特色*/
+.middle-tese{
+	width: 100%;
+}
+.middle-tese img{
+	width: 100%;
+	display: block;
+}
+/*.middle-tese li{
+	margin-top: 5px;
+}*/
+.middle-tese a{
+	display: none;
+}
+.middle-tese li:nth-child(2){
+	background-color: #00a0f0;
+}
+.middle-tese li:nth-child(3){
+	background-color: #8d84be;
+}
+.middle-tese li:nth-child(4){
+	background-color: #e94a49;
+}
+.middle-tese li:nth-child(5){
+	background-color: #ef7b45;
+}
+.middle-tese li:nth-child(6){
+	background-color: #47bbaa;
+}
+.middle-tese li:nth-child(7){
+	background-color: #d54581;
+}
+.middle-tese li:nth-child(8){
+	background-color: #89b210;
+}
+.middle-tese li:nth-child(9){
+	background-color: #001d2b;
+}
+
+/*时间轴*/
+.timeline {
+    background-image: -webkit-linear-gradient(0deg, rgba(56, 208, 245, 0.6666), rgba(56, 208, 245, 0.6666));
+    background-image: linear-gradient(90deg, rgba(56, 208, 245, 0.6666), rgba(56, 208, 245, 0.6666));
+    background-repeat: repeat-y;
+    -webkit-background-size: 0.25em 0.25em;
+    background-size: 0.25em 0.25em;
+    background-position: 2.35em 0;
+    margin: 3em auto;
+    padding: 0;
+    width: 88%;
+    max-width: 82rem;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+@media only screen and (max-width: 60em) {
+    .timeline {
+        background-position:2.2445em 0;
+    }
+}
+
+.timeline .date,.timeline .title,.timeline>ol>li:last-child:before {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.timeline .date {
+    width: 3em;
+    text-align: center;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 0.5em 0;
+    margin-top: -1.8ex;
+    display: block;
+    background-color: #cacaca;
+    color: #000000;
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+    margin-left: 5px;
+}
+
+.timeline .date .month,.timeline .date .day,.timeline .date .year {
+    display: block;
+}
+
+.timeline .date .month,.timeline .date .year {
+    font-size: 0.5em;
+}
+
+.timeline .date .day {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.timeline>ol,.timeline>ol>li {
+    list-style: none;
+    display: block;
+    position: relative;
+    margin: 3em 0;
+    padding: 0;
+}
+
+.timeline>ol>li:last-child {
+    background-color: white;
+    padding-bottom: 1em;
+}
+
+.timeline>ol>li:last-child:before {
+    content: "";
+    display: block;
+    background-color: #fe8254;
+    margin-left: 1.2em;
+    margin-top: -0.5ex;
+    width: 1em;
+    height: 1em;
+}
+
+.timeline>ol>li:last-child a {
+    font-size: 1.5rem;
+}
+
+.timeline .date,.timeline>ol>li:last-child:before {
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 0 0.25em white;
+    box-shadow: 0 0 0 0.25em white;
+}
+
+@media only screen and (max-width: 60em) {
+    .timeline .date,.timeline>ol>li:last-child:before {
+        font-size:1.5075em;
+    }
+
+    .timeline>ol>li:last-child:before {
+        margin-top: 0;
+    }
+
+    .timeline .date {
+        margin-top: 1.8ex;
+        position: relative;
+    }
+}
+
+.timeline>ol>li:first-child .date {
+    background-color: #38d0f5;
+    color: #1c687b;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.timeline .title {
+    line-height: 1.33;
+    margin: 1ex 0;
+}
+
+.timeline .details {
+    -webkit-column-gap: 8ex;
+    -moz-column-gap: 8ex;
+    column-gap: 8ex;
+    margin: 1em 0;
+}
+
+.timeline .details aside,.timeline .details .detail {
+    page-break-inside: avoid;
+    display: inline-block;
+    line-height: 1.24;
+    color: rgb(136, 136, 136);
+    -webkit-font-smoothing: antialiased;
+    font: 14px/22px "ralewayregular", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.timeline .title,.timeline .details,.timeline>ol>li:last-child {
+    padding-left: 8.86rem;
+}
+
+@media only screen and (max-width: 60em) {
+    .timeline .title,.timeline .details,.timeline>ol>li:last-child {
+        padding-left:4rem;
+    }
+}
+
+.timeline .detail:target {
+    position: relative;
+    background-color: none;
+}
+
+.timeline .detail:target:before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
+    background-color: rgba(255, 69, 0, 0.15);
+}
+
+.timeline aside {
+    page-break-before: always;
+}
+
+.timeline aside h3,.timeline .detail h3 {
+    margin: 1ex 0;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.24;
+}
+
+.timeline aside a,.timeline .detai.timeline aside p,.timeline .detail p {
+    margin: 1ex 0;
+}
+
+.innav-button {
+	text-shadow: none;
+	padding: 0.5ex 0.67em;
+	background-color: #2b9af3;
+	border-radius: 0.5ex;
+	-webkit-transition: background-color 0.24s;
+	transition: background-color 0.24s;
+	margin: 0;
+}
+.innav-button, .innav-button:link, .innav-button:visited {
+	color: white;
+}
+.features-header h2.title{
+	text-align: center;
+	margin-top: 40px;
+}
+.features-header p.detail{
+	line-height: 25px;
+	margin-top: 15px;
+}
+
+/*2014/12/1 新增单页面的title*/
+.new-middle-title-modle{
+	width: 508px;
+	border-bottom: 2px solid #e6e6e6;
+	position: relative;
+	margin: 90px auto 70px;
+}
+.new-middle-title-modle-title{
+	position: absolute;
+	left: 50%;
+	top: -11px;
+	margin-left: -32px;
+	background: #fff;
+	display: block;
+	padding: 0 0.625em;
+}
+
+/* header 适配*/
+@media screen and (max-width: 640px){
+
+	.header-left a{
+		padding: 10px 8px;
+		font-size: 0.6em;
+	}
+	.header-tool{
+		padding-top:0;
+	}
+
+
+	#header {
+		position: fixed;
+		z-index: 2;
+		top:0;
+	}
+	.header-right,.header-left,.open .header-navigation-bottom{
+		display: none;
+	}
+	.open .header-left{
+		display: block;
+		width: 100%;
+		background: rgba(2,26,37,.8);
+		top:52px;
+		position: fixed;
+		height: 100%;
+	}
+	.close .header-container{
+		height: 52px;
+	}
+	.open .header-container{
+		height: 52px;
+	}
+	.open .header-left ul li{
+		float: none;
+		padding:0px;
+		-webkit-transition:none;
+		-moz-transition:none;
+		-ms-transition:none;
+		-o-transition:none;
+		transition:none;
+	}
+	.open .header-left ul li:nth-child(1){
+		background: rgba(0,0,0,.8);
+	}
+	.open .header-left ul li:hover{
+		background: rgba(0,0,0,.8);
+	}
+	.header-left ul li a:hover{
+		padding-top:10px;
+	}
+	/*-.header-left ul li:hover ~ span{
+		width:44px;
+	}*/
+	.header-left ul li:nth-child(1):hover ~ span{
+		left:0;
+	}
+	.header-left ul li:nth-child(2):hover ~ span{
+		left:44px;
+	}
+	.header-left ul li:nth-child(3):hover ~ span{
+		left:88px;
+	}
+	.header-left ul li:nth-child(4):hover ~ span{
+		left:132px;
+	}
+	.header-left ul li:nth-child(5):hover ~ span{
+		width:72px;
+		left:176px;
+	}
+	.header-left ul li:nth-child(5),
+	.header-left ul li:nth-child(6),
+	.header-left ul li:nth-child(7){
+		display: block;
+	}
+	
+	.header-left ul li:hover ~ span,
+	.logo{
+		display: none;
+	}
+
+	.header-ico,
+	.logo-title{
+		display: block;
+	}
+	.middle-cols4{
+		padding-left:10px;
+		padding-right: 10px;
+		padding-top:67px;
+		margin-bottom:15px;
+	}
+
+	#banner{
+		display: none!important;
+	}
+
+	.middle-newaction{
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+	.middle-news .middle-newaction-content{
+		margin: 80px 40px;
+	}
+	.middle-modle,.middle-news,.middle-product,.middle-new-friends{
+		margin-top:80px;
+		padding: 0 10px;
+	}
+	.middle-product-index{
+		margin-top: 30px;
+	}
+	.middle-newaction-content-moudle-des{
+		font-size:0.8em;
+		line-height: 24px;
+	}
+	.middle-new-friends li{
+		margin-right: 18px;
+	}
+	.new-middle-title-modle{
+		display: none;
+	}
+}
+
+/* middle and footer 适配 */
+	/*相同项合并 480－1000*/
+@media only screen and (min-width: 480px) and (max-width: 1024px){
+	.middle-detail{
+		margin: 30px 10px 0px 10px;
+	}
+	.middle-newaction,
+	-.middle-newaction-content{
+		margin:30px 40px;
+	}
+	.footer-content{
+		margin:0 40px;
+	}
+	.middle-cols4 li{
+		width:50%;
+	}
+	/*cols2*/
+	.middle-cols2{
+		margin:0 40px;
+	}
+	.middle-cols3 .middle-newaction-content-moudle:nth-child(n){
+		width: 48%;
+	}
+	.middle-cols4-thumb div:hover{
+		position: static;
+		width:100%;
+		top:0;
+		left:0;
+		z-index:2;
+		box-shadow:none;
+		box-shadow: 1px 1px 18px rgba(0,0,0,0.2);
+	}
+	.banner-prev, .banner-next{
+		padding:10px 10px 0 10px;
+	}
+	.middle-newaction-content,
+	.middle-aboutus{
+		padding: 0 10px;
+	}
+	.middle-newaction{
+		margin:20px auto;
+		padding-bottom: 20px;
+	}
+	.middle-newaction-content-moudle-des{
+		font-size:0.9em;
+		line-height: 22px;
+	}
+	.middle-cols4{
+		padding: 30px 10px 0;
+	}
+	.middle-cols4 li:nth-child(2n) .middle-cols4-thumb{
+		border-right:0;
+		border-left:5px solid #fff;
+	}
+	.middle-cols4 li:nth-child(2n+1) .middle-cols4-thumb{
+		border-left:0;
+		border-right:5px solid #fff;
+	}
+}
+
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.logo{
+			width:78px;
+			background-size:78px auto;
+			top: -26px;
+			margin-left:-36px;
+		}
+		.middle-newaction-content-moudle:nth-child(n){
+			width: 100%;
+		}
+
+		.middle-cols3 .middle-newaction-content-moudle:nth-child(n){
+			width: 100%;
+		}
+		/*.footer-aboutas-right {
+			left: -10px;
+			top: 220px;
+		}*/
+		.footer-aboutas-friends{
+			margin-top:250px;
+		}
+	}
+
+	@media only screen and (max-width: 480px) and (orientation : landscape){
+		.middle-detail-content{
+			font-size: 0.6em;
+		}
+		.middle-detail-content h1{
+			font-size: 1em;
+		}
+	}
+
+	@media screen and (max-device-width: 640px) and (max-device-width: 960px) and (orientation: landscape){
+		.middle-cols4{
+			margin-top: 40px;
+		}
+	}
+
+	@media screen and (max-device-width: 480px) and (orientation : landscape){
+		.middle-detail-breadnav{
+			font-size: 0.6em;
+		}
+		.middle-detail-content{
+			line-height: 1.8em;
+		}
+		.middle-detail-content h1{
+			font-size: 1em;
+		}
+		.middle-newaction-content-moudle-des{
+			font-size: 0.9em;
+		}
+		.middle-detail{
+			margin-top: 80px;
+		}
+	}
+/* middle and footer 适配 */
+
+@media only screen and (max-width: 479px) {
+	.header-left a{
+		font-size: 1em;
+	}
+	/*content*/
+	.middle-newaction{
+		margin:0px auto;
+	}
+	.middle-newaction-title{
+		font-size: 22px;
+	}
+	.footer-content{
+		margin-left:10px;
+		margin-right: 10px;
+	}
+	.middle-newaction-content{
+		margin-top: 20px;
+	}
+	.middle-news,.middle-product{
+		margin-top:70px;
+	}
+	.middle-product-index{
+		margin-top: 30px;
+	}
+	.middle-cols4 li{
+		width:100%;
+	}
+
+	.middle-newaction-content-moudle-des{
+		clear:both;
+		font-size:0.9em;
+		line-height: 24px;
+	}
+	.middle-newaction-content-moudle:nth-child(n){
+		width: 100%;
+		margin-right: 0%;
+		padding-right: 0px;
+	}
+	.middle-newaction-content-moudle-icon{
+		margin-bottom:5px;
+	}
+	.middle-newaction-content li{
+		-width:30%;
+	}
+	.middle-newaction-content li:nth-child(7){
+		-width:40%;
+		-float: left;
+	}
+	/*.middle-newaction-content-moudle-icon img{
+		height: 120px;
+	}
+	.footer-aboutas-left dl{
+		float:none;
+	}*/
+	.middle-cols4-thumb div:hover{
+		position: static;
+		width:100%;
+		top:0;
+		left:0;
+		z-index:2;
+		box-shadow:none;
+		box-shadow: 1px 1px 18px rgba(0,0,0,0.2);
+	}
+
+	/*cols2*/
+	.middle-modle{
+		padding:0 10px;
+	}
+	.middle-cols2 li{
+		width: 100%;
+	}
+	/*cols3*/
+	.middle-cols3 .middle-newaction-content-moudle:nth-child(n){
+		width: 100%;
+	}
+}
+	@media only screen and (min-width: 320px) and (max-width: 479px) {
+		/*.footer-aboutas-right li{
+			margin-left:2px;
+		}
+		.footer-aboutas-right {
+			top: 500px;
+			left: 0;
+		}
+		.footer-aboutas-friends{
+			margin-top:520px;
+		}*/
+	}
+
+	@media only screen and (max-width: 319px) {
+		/*.footer-aboutas-right {
+			left: -10px;
+			top: 520px;
+		}
+		.footer-aboutas-friends{
+			margin-top:745px;
+		}*/
+		/*cols2*/
+
+	}
+/*20150129首页*/
+.middle-runtimetese{
+	max-width:100%;
+}
+.g-u-6{
+	width:33%;
+	float:left;
+}
+.middle-indextese-content .g-u-6{
+	height: 195px;
+}
+.middle-indextese-content .g-u-6.nomarginbottom{
+	margin-bottom:0;
+}
+.middle-indextese-des{
+	line-height: 22px;
+	font-size: 0.8em;
+	color:#2a2a2a;
+	padding-top: 30px;
+}
+.middle-indextese-ico{
+	margin-left:47px;
+}
+.middle-indextese-des-top{
+	margin-top: 16px;
+}
+.middle-indexanli li{
+	width:20%;
+	margin-bottom: 80px;
+}
+.middle-indexanli .middle-cols4-thumb{
+	margin-left:5px;
+	margin-right:5px;
+}
+.middle-indexanli-tiyan{
+	display:block;
+	font-weight:bold;
+	text-align: left;
+	font-size:1rem;
+}
+
+@media only screen and (max-width: 479px){
+	.middle-indextese-tuntime{
+		padding:0 10px;
+		box-sizing: border-box;
+		margin-bottom: 30px;
+	}
+	.middle-indexanli li{
+		width:50%;
+	}
+}
+@media only screen and (min-device-width : 768px) and (orientation : portrait) {
+	.middle-indextese-ico{
+		margin-left: 10px;
+	}
+}
+
+/*20150522首页*/
+/*白鹭引擎与工具特点+白鹭运行时+产品  适配*/
+@media only screen and (max-width: 320px){
+	/*产品*/
+	.middle-product li{
+		width:50%;
+	}
+	.middle-newaction-content-type4{
+	padding-left: 20px;
+	}
+	/*白鹭运行时runtime*/
+	.middle-newaction-content-bg-runtime{
+	background: url('http://official.egret.com/egret/images/runtimeindex4.jpg') no-repeat top center;
+	}
+	.middle-newaction-content-bg-runtime .download{
+	display: block;
+	width: 150px;
+	height: 220px;
+	position: absolute;
+	top: 156px;
+	left: 50%;
+	margin-left: -155px;
+	opacity: 0;
+	}
+	.middle-newaction-content-type3{
+		display: none;
+	}
+}
+@media only screen and (min-width: 321px) and (max-width: 480px){
+	/*产品*/
+	.middle-product li{
+		width:50%;
+	}
+	.middle-newaction-content-type4{
+	padding-left: 80px;
+	}
+	/*白鹭运行时runtime*/
+	.middle-newaction-content-bg-runtime{
+	background: url('http://official.egret.com/egret/images/runtimeindex5.jpg') no-repeat top center;
+	}
+	.middle-newaction-content-bg-runtime .download{
+	display: block;
+	width: 220px;
+	height: 300px;
+	position: absolute;
+	top: 166px;
+	left: 50%;
+	margin-left: -220px;
+	opacity: 0;
+	}
+	.middle-newaction-content-type3{
+		display: none;
+	}	
+}
+@media only screen and (max-width: 480px) {
+	/*引擎与工具特点*/
+	.middle-newaction-content,.middle-newaction-content-type2{
+		margin: 10px auto 0;
+		padding-left: 0px;
+	}
+	.g-u-6{
+		width: 95%;
+		box-sizing: border-box;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-left: 10px;
+	}
+	.middle-indextese-content .g-u-6.nomarginbottom{
+		margin-bottom:10px;
+	}
+	.middle-indextese-ico{
+		margin-left: 0;
+	}
+	.middle-newaction-content-type3{
+	/*白鹭运行时runtime*/
+		top:100px;
+		margin-left: 5px;
+	}
+	.middle-newaction-content-type3 p{
+		margin-bottom: 10px;
+	}
+	.middle-newaction-content-type3 h2{
+		font-size: 18px;
+	}
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	/*引擎与工具特点*/
+	.middle-newaction-content,.middle-newaction-content-type2{
+		margin: 10px auto 0;
+		padding-left: 0px;
+	}
+	.g-u-6{
+		width: 50%;
+		box-sizing: border-box;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	/*产品*/
+	.middle-product li{
+		width:28%;
+	}
+	.middle-newaction-content-type4{
+	padding-left: 50px;
+	}
+	/*白鹭运行时runtime*/
+	.middle-newaction-content-type3{
+		top:140px;
+		margin-left: 15px;
+	}
+	.middle-newaction-content-type3 p{
+		margin-bottom: 10px;
+	}
+}
+@media only screen and (min-width: 769px) and (max-width: 860px) {
+	/*产品*/
+	.middle-product li{
+		width:25%;
+	}
+	.middle-newaction-content-type4{
+	padding-left: 65px;
+	}
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	/*引擎与工具特点*/
+	.middle-newaction-content-type2{
+		padding-left: 0px;
+	}
+	/*产品*/
+	.middle-newaction-content-type4{
+	padding-left: 35px;
+	}
+}
+@media only screen and (min-width: 1025px) and (max-width: 1336px) {
+	/*引擎与工具特点*/
+	.middle-newaction-content-type2{
+		padding-left: 0px;/*100*/
+	}
+}
+@media only screen and (min-width: 1337px) and (max-width: 1600px) {
+	/*引擎与工具特点*/
+	.middle-newaction-content-type2{
+		padding-left: 0px;/*188*/
+	}
+}
+@media only screen and (min-width: 2561px) and (max-width: 2880px) {
+	/*产品*/
+	.middle-newaction-content-type4{
+		padding-left: 100px;
+	}
+}
